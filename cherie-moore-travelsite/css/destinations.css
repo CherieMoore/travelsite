@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/** Navigation **/
+.navbar {
+  position: fixed;
+  background-color: #FFFFFF;
+  width: 100%;
+  list-style: none;
+  padding: 20px;
+  display: flex;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #335576;
+}
+
+.navbar a:active {
+  text-decoration: underline;
+  text-decoration-color: #DB7A4E;
+  color: inherit;
+}
+
+.navbar__left {
+  width: 70vw;
+}
+
+.navbar__right {
+  width: 30vw;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  font-weight: bold;
+  color: #335576;
+}
+
+.navbar-links {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 30px;
+  margin-left: 30px;
+  color: #335576;
+}
+
+
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-wrap: wrap;
+  }
+}
+
+
+/** Recommendations Section **/
+.recs-cardshawaii {
+  background-image: url('../assets/Images/hawaii.jpg');
+  background-position: 5px;
+  padding-top:100px;
+}
+
+.recs-cardsgreece {
+  background-image: url('../assets/Images/greece.jpg');
+  background-position: 5px;
+  padding-top:100px;
+}
+
+.recs-cardsiceland {
+  background-image: url('../assets/Images/iceland.jpg');
+  background-position: 5px;
+  padding-top:100px;
+
+}
+
+.recs-cards__text {
+  color: #ffffff;
+  align-items: left;
+  padding: 50px;
+  font-size: 50px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 100px;
+  padding-bottom: 100px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.card-container-title {
+  text-decoration: underline;
+}
+
+.card {
+  border: 1px solid black;
+  position: relative;
+  width: 360px;
+  height: 450px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
+.friday {
+  display: flex;
+  flex-direction: column;
+}
+
+.friday-breakfast, .friday-lunch, .friday-dinner, .friday-snorkeling, .friday-hiking, .friday-dancing {
+  background-color: #FEFAF5;
+  margin-top: 20px;
+  padding: 20px;
+  font-weight: 300;
+}
+
+.saturday-breakfast, .saturday-lunch, .saturday-dinner, .saturday-snorkeling, .saturday-hiking, .saturday-dancing{
+  background-color: #FEFAF5;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.sunday-breakfast, .sunday-lunch, .sunday-dinner, .sunday-snorkeling, .sunday-hiking, .sunday-dancing {
+  background-color: #FEFAF5;
+  margin-top: 20px;
+  padding: 20px;
+}
+/** Footer **/
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #FEFAF5;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+/** Applying flexbox columns to div parent classes **/
+.footer__contact .footer__hours .footer__saturday .footer__sunday .footer__social {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+}
+
+/** Applying padding and margin to parent elements and social icons**/
+.footer__contact{
+  padding-right:100px;
+}
+.footer__saturday {
+  margin-top: 22px;
+  padding-left:100px;
+}
+
+.footer__sunday {
+  margin-top: 22px;
+  padding-left:100px;
+}
+
+.footer__social {
+  padding-left: 100px;
+}
+
+.footer__social-icons {
+  padding-top: 10px;
+}
+/** Applying color to h3 footer elements **/
+.footer__contact-title h3, .footer__hours-hours h3, .footer__social-social h3 {
+  color: #335576;
+}
+
+/** Apply color to h4 footer elements **/
+.footer__contact-emailaddress h4, 
+.footer__hours-times h4, 
+.footer__saturday-time h4, 
+.footer__sunday-closed h4 {
+  color: #335576;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+/** Applying color to the p elements **/
+.footer__contact-email p,
+.footer__hours-days p,
+.footer__saturday-day p,
+.footer__sunday-sunday p {
+  color: #DB7A4E;
+  font-size: 12px;
+}
